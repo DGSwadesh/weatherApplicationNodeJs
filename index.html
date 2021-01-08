@@ -10,8 +10,59 @@
 <style>
     *{
         padding: 0;
-        margin: 1;  
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
     }
+    body{
+        background: rgb(243, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100vw;
+    }
+    html,body{
+        font-size: 62.5%;
+        height: 100%;
+    }
+    .info{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45%;
+        z-index: 4;
+    }
+    .location{
+        margin-top: 1.5rem;
+        text-align: center;
+        font-weight: 800;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    #date{
+        font-size: 2.2rem;
+        color: aqua;
+    }
+    .temp{
+        font-size: 1.9rem;
+        color: aqua;
+    }
+    .tempmin_max{
+        font-size: 1.8rem;
+        color: aqua;
+    }
+    .weather{
+        font-size: 1.6rem;
+        color: aqua;
+    }
+    /* html{
+        background: rgb(243, 0, 0);
+    } */
+    /* .box{
+        width: 20vw;
+        height: 60vh;
+    } */
 </style>
 </head>
 
@@ -23,15 +74,27 @@
     <div id='weather'>
         <i class="fa fa-sun-o" aria-hidden="true" style="color: #eccc68"></i>
         pune,In
-    </div class='info'>
-
+    </div >
+<div>
+    
+</div>
     <div id='weather'>
         <h2 class="location"><i class="fa fa-street-view" aria-hidden="true"style="color: #eccc68"></i> </h2>
    <p id="date">web | OCT 23 | 10:49AM</p>
    <h1 class="temp">26.49 C</h1>
    <h3 class="tempmin_max">Min 26.49 C | Max 26.49C</h3>
     </div>
-    
+    <script>
+        const curentDate = document.getAnimations('date');
+        let weatherCondition = document.getElementById('weatercon');
+        const tempStatus = 'Cloud';
+        const getCurrentDay = () => {
+            let currentTime = new Date();
+            console.log(currentTime.getDay());
+        };
+        getCurrentDay();
+
+    </script>
 </body>
 
 </html>
